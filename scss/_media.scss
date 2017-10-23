@@ -1,0 +1,39 @@
+@media (max-width: 1295px) {
+    .menu {
+        ul {
+            padding: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 1125px) {
+    
+    .container {
+        width: 95%;
+    }
+    .menu {
+        ul {
+            position: relative;
+            li:nth-child(5) {
+                position: absolute;
+                right: 0px;
+                top: 10px;
+            }
+            li {
+                display: block;
+                text-align: left;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .menu {
+        ul {
+            li:nth-child(5){
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.notice {
+    background-color: $dark-grey;
+    position: relative;
+    height: auto;
+    overflow: auto;
+    span {
+        align-self: auto;
+        color: $light-grey;
+        letter-spacing: -0.6px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        float: right;
+        display: inline-table;
+        li {
+            display: table-cell;
+            padding: 0 10px;
+            vertical-align: middle;
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.menu {
+    text-align: center;
+    ul {
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        display: inline-table;
+        li:nth-child(5) {
+            width: 400px;
+            padding-top: 5px;
+        }
+        li {
+            display: table-cell;
+            vertical-align: middle;
+            margin-left: 40px;
+            padding: 0 10px;
+            a {
+                color: black;
+            }
+        }
+    }
+}
