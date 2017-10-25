@@ -40,7 +40,7 @@
             </ul>
         </div>
     </nav>
-    <section class="container-fluid main">
+    <main class="container-fluid main">
         <div class="imageDisplay">
             <img src="img/main.png">
         </div>
@@ -52,9 +52,12 @@
                 <h4>Hacket Garment Dyed Oxford Slim Fit Shirt White</h4>
                 <h2>999 kr</h2>
                 <h5>Välj storlek</h5>
-                <button type="input" class="btn">S</button>
-                <button class="btn">M</button>
-                <button class="btn">L</button>
+                <div>
+                    <input type="radio" checked name="product-size" id="toggle-size-1">
+                    <label for="toggle-size-1">S</label><input type="radio" name="product-size" id="toggle-size-2">
+                    <label for="toggle-size-2">M</label><input type="radio" name="product-size" id="toggle-size-3">
+                    <label for="toggle-size-3">L</label>
+                </div>
                 <button class="btnlg">Lägg i varukorgen</button>
                 <span class="artikelnummer bold"><span class="light-grey-text">Artikelnummer:</span> HM3049975AL</span>
             </div>
@@ -80,6 +83,12 @@
                     <div class="toggle-content">Detta är lite text som berättar om produkten</div>
                 </div>
             </div>
+        </div>
+    </main>
+    <section>
+        <div class="container">
+            <span><a>Mer från hackett london</a></span>
+            <span><a>Se alla hackett produkter</a></span>
         </div>
     </section>
 </body>

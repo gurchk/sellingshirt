@@ -22,6 +22,9 @@
             a {
                 font-size: 0.9rem;
             }
+            a:hover{
+                color: $lighter-grey;
+            }
         }
     }
 }
@@ -48,9 +51,12 @@
             display: table-cell;
             vertical-align: middle;
             margin-left: 40px;
-            padding: 0 10px;
+            padding: 0 0.2vw;
             a {
                 color: black;
+            }
+            a:hover{
+                color: $light-grey-text;
             }
         }
     }
@@ -107,6 +113,9 @@
         font-weight: bold;
     }
     .imageInfo .miniContainer {
+        input[type=radio] {
+            display: none;
+        }
         margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
@@ -119,17 +128,19 @@
         h5 {
             text-transform: uppercase;
         }
-        .btn {
+        label {
             color: $dark-grey;
-            font-size: 1rem;
+            font-size: 1.2rem;
             background: #fff;
             width: 40px;
             height: 40px;
             border: solid #000000 1px;
             text-decoration: none;
+            display: inline-block;
+            padding-top: 7px;
         }
-        .btn:focus,
-        .btn:hover {
+        label:hover,
+        input:checked+label {
             background: #000000;
             text-decoration: none;
             color: #fff;
@@ -180,7 +191,7 @@
             }
         }
         label:hover,
-        input:checked + label {
+        input:checked+label {
             i {
                 color: $dark-grey;
             }
