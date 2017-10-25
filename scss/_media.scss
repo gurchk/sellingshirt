@@ -1,4 +1,4 @@
-@media (max-width: 1295px) {
+@media screen and (max-width: 1295px) {
     .menu {
         ul {
             padding: 20px 0;
@@ -6,8 +6,7 @@
     }
 }
 
-@media (max-width: 1125px) {
-    
+@media screen and (max-width: 1125px) {
     .container {
         width: 95%;
     }
@@ -28,12 +27,15 @@
     }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
     .menu {
         ul {
-            li:nth-child(5){
+            li:nth-child(5) {
                 display: none;
             }
         }
+    }
+    .main {
+        grid-template-columns: 1fr;
     }
 }
