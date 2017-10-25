@@ -2,9 +2,15 @@
 $dark-blue: #141527;
 $dark-grey: #1D1D1B;
 $light-grey: #D8D8D8;
+$light-grey-text: #BCBCBC;
 $lighter-grey: #F1F1F1;
+$nice-green: #59C587;
+
 * {
     box-sizing: border-box;
+}
+.light-grey-text {
+   color: $light-grey-text;
 }
 
 h1,
@@ -13,19 +19,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: open-sans;
+    font-family: open sans;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
 span {
     font-family: open sans;
     font-size: 0.9rem;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 a {
     display: inline-block;
     text-transform: uppercase;

@@ -1,3 +1,4 @@
+// Notice bar above navigation
 .notice {
     background-color: $dark-grey;
     position: relative;
@@ -25,8 +26,14 @@
     }
 }
 
+// Navigation
 .menu {
     text-align: center;
+    position: relative;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.56);
     ul {
         margin: 0;
         padding: 20px 0;
@@ -45,6 +52,149 @@
             a {
                 color: black;
             }
+        }
+    }
+}
+
+// Main Content
+.main {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    .imageDisplay img {
+        max-width: 100%;
+        height: auto;
+    }
+    .imageInfo {
+        text-align: center;
+        position: relative;
+        background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 100%);
+        /* ff3.6+ */
+        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(241, 241, 241, 1)));
+        /* safari4+,chrome */
+        background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 100%);
+        /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 100%);
+        /* opera 11.10+ */
+        background: -ms-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 100%);
+        /* ie10+ */
+        background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 100%);
+        /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1F1F1', endColorstr='#FFFFFF', GradientType=1);
+        /* ie6-9 */
+        .miniContainer {
+            width: 50%;
+        }
+    } // Nyhet
+    .imageInfo .nyhet {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: #fff;
+        letter-spacing: 2px;
+        padding: 2px 13px;
+    } // Finns i lager
+    .imageInfo .lagerstatus {
+        i {
+            padding-right: 5px;
+            color: $nice-green;
+        }
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+        letter-spacing: -1px;
+        font-weight: bold;
+    }
+    .imageInfo .miniContainer {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        h4 {
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-family: sans-serif;
+        }
+        h5 {
+            text-transform: uppercase;
+        }
+        .btn {
+            color: $dark-grey;
+            font-size: 1rem;
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            border: solid #000000 1px;
+            text-decoration: none;
+        }
+        .btn:focus,
+        .btn:hover {
+            background: #000000;
+            text-decoration: none;
+            color: #fff;
+        }
+        .btnlg {
+            color: #fff;
+            font-size: 1rem;
+            background: $dark-blue;
+            width: 75%;
+            height: 50px;
+            text-decoration: none;
+            border: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+        .btnlg:focus,
+        .btnlg:hover {
+            background-color: $nice-green;
+        }
+        .artikelnummer {
+            margin-top: 1rem;
+            display: block;
+        }
+    }
+    .aboutProduct {
+        width: 90%;
+        margin: 0 auto;
+        // Input style
+        input[type=radio] {
+            display: none;
+        }
+        label {
+            display: block;
+            padding: 20px 0 20px 0;
+            cursor: pointer;
+            color: $light-grey-text;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: open sans;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            i {
+                margin-top: -5px;
+                float: right;
+                margin-right: 10px;
+            }
+        }
+        label:hover,
+        input:checked + label {
+            i {
+                color: $dark-grey;
+            }
+        }
+        .toggle-content {
+            display: none;
+            text-align: left;
+            font-family: sans-serif;
+            font-size: 1rem;
+            padding: 15px 0 15px 0;
+        }
+        // Toggle state
+        input[type=radio]:checked~.toggle-content {
+            display: block;
         }
     }
 }
