@@ -1,1 +1,1 @@
-# sellingshirt
+Pure HTML5 and Sass only.
