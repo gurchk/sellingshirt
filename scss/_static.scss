@@ -5,12 +5,13 @@ $light-grey: #D8D8D8;
 $light-grey-text: #BCBCBC;
 $lighter-grey: #F1F1F1;
 $nice-green: #59C587;
-
+$kampanj: #2C2F3E;
 * {
     box-sizing: border-box;
 }
+
 .light-grey-text {
-   color: $light-grey-text;
+    color: $light-grey-text;
 }
 
 h1,
@@ -42,3 +43,51 @@ a {
     font-size: 1.2rem;
     color: $light-grey;
 }
+
+p {
+    text-align: center;
+    color: $light-grey-text;
+    font-family: sans-serif;
+    letter-spacing: -0.5px;
+    font-size: 0.94rem;
+}
+
+.nyhet {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 2px 13px;
+    text-transform: uppercase;
+}
+
+.kampanj {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $kampanj;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 2px 13px;
+    text-transform: uppercase;
+}
+
+.priceOff999-20percent {
+    h2::before{
+        text-decoration: line-through;
+        content: "999kr";
+        font-weight: 100;
+    } 
+    
+    h2::after {
+        content: "799kr";
+        margin-left: 10px;
+        text-decoration: none !important;
+        color: #D21212;
+    }
+}
+
