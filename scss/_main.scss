@@ -165,6 +165,7 @@
             display: block;
         }
     }
+    // About the product thats highlighted
     .aboutProduct {
         width: 90%;
         margin: 0 auto;
@@ -234,6 +235,7 @@
             }
         }
     }
+    // Flera produkter från main
     .productGrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -275,7 +277,7 @@
         }
     }
 }
-
+ // Mailing sektionen
 .mailList {
     width: 85%;
     margin: 5rem auto 3rem auto;
@@ -338,7 +340,7 @@
         }
     }
 }
-
+// Media sektion so i Social Media
 .media {
     background-color: $lighter-grey;
     height: auto;
@@ -366,7 +368,7 @@
         opacity: 0.6;
     }
 }
-
+ // Footer sektion
 .footah {
     .hr-footer {
         width: 85%;

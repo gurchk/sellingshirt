@@ -46,6 +46,12 @@
                 width: auto;
                 text-align: center !important;
             }
+            li:nth-child(4) {
+                margin-bottom: -40px;
+            }
+            li:nth-child(6){
+                margin-top: -40px;
+            }
             li:nth-child(1n+5) {
                 text-align: right;
             }
@@ -105,14 +111,7 @@
     }
 }
 
-@media screen and (max-width: 520px) {
-    .menu {
-        img {
-            width: 80% !important;
-        }
-    }
-    
-    
+@media screen and (max-width: 520px) { 
     .media {
         .mediaWrapper {
             grid-template-columns: 1fr;

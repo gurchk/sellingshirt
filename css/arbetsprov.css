@@ -780,6 +780,10 @@ p {
       .menu ul li:nth-child(5) {
         width: auto;
         text-align: center !important; }
+      .menu ul li:nth-child(4) {
+        margin-bottom: -40px; }
+      .menu ul li:nth-child(6) {
+        margin-top: -40px; }
       .menu ul li:nth-child(1n+5) {
         text-align: right; }
       .menu ul li:nth-child(3) {
@@ -817,9 +821,6 @@ p {
         padding: 0;
         margin: 0; } }
 @media screen and (max-width: 520px) {
-  .menu img {
-    width: 80% !important; }
-
   .media .mediaWrapper {
     grid-template-columns: 1fr; }
     .media .mediaWrapper button {
